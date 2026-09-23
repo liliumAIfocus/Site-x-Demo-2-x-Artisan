@@ -10,16 +10,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Fond « papier » chaud et encre quasi noire : la base fixe du design.
+        // Fond clair (« paper » : blanc + lavis bleu clair) et encre bleu
+        // marine (« ink » : texte, blocs sombres, ombres) : la base fixe du design.
         paper: {
-          DEFAULT: "#F4F0E8",
-          2: "#EAE4D9",
-          3: "#DDD5C7",
+          DEFAULT: "#FFFFFF",
+          2: "#EEF4FC",
+          3: "#DCE8F7",
         },
         ink: {
-          DEFAULT: "#171512",
-          2: "#24211C",
-          3: "#34302A",
+          DEFAULT: "#0D2240",
+          2: "#152E54",
+          3: "#1F3C68",
         },
         brand: {
           DEFAULT: v("brand"),

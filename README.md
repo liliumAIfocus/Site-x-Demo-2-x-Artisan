@@ -1,8 +1,8 @@
 # Site Artisan — design 2 « Atelier »
 
 Deuxième template de site vitrine pour artisans (plomberie / chauffage /
-électricité), volontairement différent du design 1 : fond papier chaud, encre
-noire, accent cuivre, typographie grasse condensée, angles droits.
+électricité), volontairement différent du design 1 : fond blanc et bleu clair,
+encre bleu marine, accent bleu azur, typographie grasse condensée, angles droits.
 
 React + Vite + Tailwind + GSAP. Le contenu propre à chaque artisan se configure
 depuis un seul fichier, **compatible avec la config du design 1**.
@@ -28,7 +28,7 @@ Voir le guide complet : [PERSONNALISATION.md](PERSONNALISATION.md).
 - Deux « rubans de chantier » croisés qui défilent (prestations / engagements)
 - Prestations en liste numérotée façon sommaire
 - Galerie de réalisations **épinglée** qui défile à l'horizontale (ordinateur)
-- Méthode : un **tuyau cuivre** se remplit au scroll et allume chaque étape
+- Méthode : un **tuyau** se remplit au scroll et allume chaque étape
 - Carte « radar » de la zone d'intervention avec les communes desservies
 - Indicateur « Disponible maintenant » calculé sur les horaires
 - Barre d'action fixe Appeler / Devis sur mobile

@@ -59,10 +59,10 @@ export const config = {
 
   // ========================= COULEUR =========================
   // couleurs: {
-  //   brand: "#B8501F",
-  //   brandLight: "#D2703F",
-  //   brandGlow: "#EDB08E",
-  //   brandDeep: "#8A3914",
+  //   brand: "#1E6FE8",
+  //   brandLight: "#3B82F0",
+  //   brandGlow: "#BFD8FB",
+  //   brandDeep: "#1553B8",
   // },
 
   // ========================= PHOTOS / VIDÉOS =========================

@@ -4,24 +4,25 @@
 
 :root {
   color-scheme: light;
-  --paper: #f4f0e8;
-  --paper-rgb: 244 240 232;
-  --ink: #171512;
-  --ink-rgb: 23 21 18;
+  --paper: #ffffff;
+  --paper-rgb: 255 255 255;
+  --paper-2: #eef4fc;
+  --ink: #0d2240;
+  --ink-rgb: 13 34 64;
   /* Couleurs de marque — surchargées au démarrage depuis la config
-     (voir src/config/theme.js). Valeurs ci-dessous = démo cuivre. */
-  --brand: #b8501f;
-  --brand-rgb: 184 80 31;
-  --brand-light: #d2703f;
-  --brand-light-rgb: 210 112 63;
-  --brand-glow: #edb08e;
-  --brand-glow-rgb: 237 176 142;
-  --brand-deep: #8a3914;
-  --brand-deep-rgb: 138 57 20;
-  --brand-text: #a9491c;
-  --brand-text-rgb: 169 73 28;
-  --brand-bright: #d98a5f;
-  --brand-bright-rgb: 217 138 95;
+     (voir src/config/theme.js). Valeurs ci-dessous = démo bleu azur. */
+  --brand: #1e6fe8;
+  --brand-rgb: 30 111 232;
+  --brand-light: #3b82f0;
+  --brand-light-rgb: 59 130 240;
+  --brand-glow: #bfd8fb;
+  --brand-glow-rgb: 191 216 251;
+  --brand-deep: #1553b8;
+  --brand-deep-rgb: 21 83 184;
+  --brand-text: #1d69db;
+  --brand-text-rgb: 29 105 219;
+  --brand-bright: #5894ee;
+  --brand-bright-rgb: 88 148 238;
   --on-brand: #ffffff;
   --on-brand-rgb: 255 255 255;
   --header-h: 72px;
@@ -47,15 +48,15 @@ body {
   overflow-x: clip;
 }
 
-/* Grain papier très léger, pour la matière */
+/* Grain très léger (teinté bleu), pour la matière */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.4;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.09 0 0 0 0 0.08 0 0 0 0 0.07 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.28;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.05 0 0 0 0 0.13 0 0 0 0 0.25 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 ::selection {
@@ -312,11 +313,11 @@ body::before {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #eae4d9;
+  background: var(--paper-2);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--ink);
-  border: 3px solid #eae4d9;
+  border: 3px solid var(--paper-2);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--brand);

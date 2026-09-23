@@ -78,15 +78,15 @@ export const demo = {
 
   /* ------------------------------ MARQUE -------------------------------- */
   // Pour changer la couleur dominante du site, ajuste ces 4 nuances,
-  // de la plus claire à la plus foncée. (défaut = cuivre)
+  // de la plus claire à la plus foncée. (défaut = bleu azur)
   // Le site calcule tout seul des variantes lisibles (texte sur fond clair,
   // sur fond sombre, texte posé sur la couleur) : n'importe quelle teinte
   // fonctionne, claire ou foncée.
   couleurs: {
-    brand: "#B8501F", // couleur principale
-    brandLight: "#D2703F", // survols / états clairs
-    brandGlow: "#EDB08E", // reflets
-    brandDeep: "#8A3914", // éléments foncés
+    brand: "#1E6FE8", // couleur principale
+    brandLight: "#3B82F0", // survols / états clairs
+    brandGlow: "#BFD8FB", // reflets
+    brandDeep: "#1553B8", // éléments foncés
   },
 
   // Note Google (affichage)
@@ -106,9 +106,9 @@ export const demo = {
   heroVideoMobile: null,
   // Image du cadre principal du hero (format vertical idéalement)
   hero:
-    "https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1782805153036-cb179bde2c4c?auto=format&fit=crop&w=1200&q=80",
   // (design 2) Légende sous l'image du hero
-  heroLegende: "Réseau cuivre refait à neuf, avant fermeture des cloisons",
+  heroLegende: "Salle de bain rénovée de A à Z : douche d'angle, meuble vasque et WC",
   // Portrait de l'artisan (photo stock pour la démo)
   portrait:
     "https://images.unsplash.com/photo-1646227655685-a530813759b3?auto=format&fit=crop&w=800&q=80",

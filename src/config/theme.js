@@ -6,17 +6,19 @@
  *
  * En plus des 4 nuances de la config, trois variantes sont CALCULÉES pour que
  * le site reste lisible quelle que soit la couleur choisie (claire ou foncée) :
- *   --brand-text   : la couleur assombrie juste ce qu'il faut sur fond papier
- *   --brand-bright : la couleur éclaircie juste ce qu'il faut sur fond encre
+ *   --brand-text   : la couleur assombrie juste ce qu'il faut sur fond clair
+ *   --brand-bright : la couleur éclaircie juste ce qu'il faut sur fond marine
  *   --on-brand     : blanc ou encre, pour du texte posé SUR la couleur
  * Changer les couleurs dans la config suffit — aucun autre fichier à toucher.
  */
 
-const PAPER = [244, 240, 232]; // #F4F0E8
-const INK = [23, 21, 18]; // #171512
+// Fond clair de référence : le lavis bleu (paper-2), plus exigeant que le
+// blanc — un accent lisible dessus l'est aussi sur blanc.
+const PAPER = [238, 244, 252]; // #EEF4FC
+const INK = [13, 34, 64]; // #0D2240
 const WHITE = [255, 255, 255];
 
-// "#B8501F" -> [184, 80, 31]
+// "#1E6FE8" -> [30, 111, 232]
 function hexToRgb(hex) {
   const clean = String(hex).replace("#", "").trim();
   const full =

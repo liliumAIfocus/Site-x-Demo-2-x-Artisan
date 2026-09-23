@@ -34,7 +34,7 @@ const STEPS = [
 /* Hexagone façon écrou/raccord, pour les étapes */
 const HEX = "polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0 50%)";
 
-/* Méthode : un « tuyau » en cuivre se remplit au fil du scroll et relie les
+/* Méthode : un « tuyau » se remplit au fil du scroll et relie les
    étapes, chaque raccord s'allume au passage. */
 export default function Methode({ onOpenSimulator }) {
   const rootRef = useRef(null);
@@ -111,7 +111,7 @@ export default function Methode({ onOpenSimulator }) {
 
         <div className="lg:col-span-7">
           <ol ref={listRef} className="relative">
-            {/* Tuyau : gaine + remplissage cuivre (dégradé = effet cylindre) */}
+            {/* Tuyau : gaine + remplissage couleur de marque (dégradé = effet cylindre) */}
             <div
               ref={pipeRef}
               aria-hidden="true"
