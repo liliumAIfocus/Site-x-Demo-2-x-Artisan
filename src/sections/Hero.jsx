@@ -60,16 +60,9 @@ export default function Hero({ onOpenSimulator }) {
             </span>
           </h1>
 
-          <p
-            className="fade-up mt-7 max-w-xl text-lg leading-relaxed text-ink/75 md:text-xl"
-            style={{ "--d": "420ms" }}
-          >
-            {config.hero_sous_titre}
-          </p>
-
           <div
-            className="fade-up mt-9 flex flex-col gap-6 sm:flex-row sm:items-center"
-            style={{ "--d": "540ms" }}
+            className="fade-up mt-8 flex flex-col gap-6 sm:flex-row sm:items-center"
+            style={{ "--d": "420ms" }}
           >
             <button type="button" onClick={onOpenSimulator} className="btn-main self-start">
               Estimer mon projet
@@ -92,6 +85,13 @@ export default function Hero({ onOpenSimulator }) {
               </span>
             </a>
           </div>
+
+          <p
+            className="fade-up mt-8 max-w-xl text-lg leading-relaxed text-ink/75 md:text-xl"
+            style={{ "--d": "540ms" }}
+          >
+            {config.hero_sous_titre}
+          </p>
 
           <dl
             className="fade-up mt-12 grid grid-cols-3 border-y-2 border-ink lg:mt-auto"
